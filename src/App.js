@@ -1,11 +1,14 @@
-import categories from "./categories.json"
-import Directory from "./components/categories/Directory";
+import Home from "./routes/home/Home.component"
+import NavigationBar from "./routes/navigation/NavigationBar"
+import {Routes, Route} from "react-router-dom"
 
 function App() {
   return (
-    <div className="App">
-      <Directory categories = {categories} />
-    </div>
+    <Routes>
+      <Route path = '/' element ={<NavigationBar/>}>
+        <Route index element = {<Home/>} />
+      </Route>   
+    </Routes>
   )
 }
 
