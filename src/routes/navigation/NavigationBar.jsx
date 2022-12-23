@@ -16,8 +16,9 @@ function NavigationBar () {
                     <Link className = 'nav-link' to = '/shop' >
                         cart
                     </Link>
-                    <Link className = 'nav-links' to = '/shop' >
-login                    </Link>
+                    <Link className = 'nav-links' to = '/signin' >
+                        signin
+                    </Link>
                 </div>
             </div>
             <Outlet/>
